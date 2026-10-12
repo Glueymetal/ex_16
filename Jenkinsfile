@@ -2,7 +2,7 @@ pipeline{
     agent any 
     environment{
         TAG = 'maven-app'
-        VERSION = "${env.BUILD_NO}"
+        VERSION = "${env.BUILD_NUMBER}"
     }
     stages{
         stage('Checkout')
